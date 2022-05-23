@@ -22,7 +22,9 @@ export const reducers = (state = initialState, action)=>{
             const endDay = daysInMonth(selectedMonth, selectedYear);
             const days = getDays(startDay,endDay);
 
-            return{...state, selectedMonth,selectedYear,days}
+            return{...state, selectedMonth,selectedYear,days};
+            default : 
+            return state;
 
     }
 
